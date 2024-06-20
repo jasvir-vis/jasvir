@@ -10,7 +10,7 @@ import { FaDownload } from 'react-icons/fa'
 
 
 
-const resumeUrl = "http://localhost:5173/vishalll.pdf";
+const resumeUrl = "http://jasvir.vercel.app/vishalll.pdf";
 
 const App = () => {
 
