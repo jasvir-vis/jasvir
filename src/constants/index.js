@@ -42,7 +42,7 @@ export const PROJECTS = [
   {
     title: "E-Commerce Website",
     image: project1,
-    link : "https://html.com",
+    link : "https://github.com/jasvir-vis/Vookstore-site",
     description:
       "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
     technologies: ["HTML", "CSS", "Javascript", "Bootstrap", "PHP","MY SQL"],
@@ -50,7 +50,7 @@ export const PROJECTS = [
   {
     title: "Hostel Management Website",
     image: project2,
-    link : "https://html.com",
+    link : "https://github.com/jasvir-vis/hostel-management",
     description:
       "An Website managing the student data with register and login information and book hostel room with transaction reciept",
     technologies: ["HTML", "CSS", "Javascript", "Bootstrap", "PHP","MY SQL"],
@@ -58,7 +58,7 @@ export const PROJECTS = [
   {
     title: "Portfolio Website",
     image: project3,
-    link : "https://html.com",
+    link : "https://github.com/jasvir-vis/jasvir",
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
     technologies: ["HTML", "CSS", "React", "Tailwind css"],
