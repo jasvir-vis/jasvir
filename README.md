@@ -1,8 +1,64 @@
-# React + Vite
+# Jasvir Singh's Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal portfolio website built using React.js and Tailwind CSS. It showcases my projects and skills.
 
-Currently, two official plugins are available:
+## Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React.js
+- Tailwind CSS
+- Framer Motion
+- React Icons
+
+## Getting Started
+
+To run this project locally, clone the repository and run:
+
+```bash
+npm install
+npm start
+```
+Following packages need to install
+
+Install React.js
+```bash
+npm install react react-dom
+```
+
+Install Tailwind CSS and its dependencies
+```bash
+npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
+```
+
+Install Framer Motion
+```bash
+npm install framer-motion@latest
+```
+
+Install React Icons
+```bash
+npm install react-icons@latest
+```
+
+
+structure 
+```bash
+my-portfolio/
+├── public/
+└── src/
+    ├── components/
+    ├── pages/
+    ├── App.js
+    ├── index.js
+    └── ...
+```
+
+
+# Features
+- Responsive design using Tailwind CSS.
+- Smooth animations with Framer Motion.
+- Icons from popular icon packs using React Icons.
+
+# Deployment
+To deploy this project, you can use services like Vercel, Netlify, or GitHub Pages.
+
+Thanks for visting on my site and give your feedback about it.
