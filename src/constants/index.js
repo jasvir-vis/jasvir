@@ -66,7 +66,7 @@ export const PROJECTS = [
   {
     title: "Blogging Platform",
     image: project4,
-    link : "https://html.com",
+    link : "https://github.com/jasvir-vis",
     description:
       "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
     technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
