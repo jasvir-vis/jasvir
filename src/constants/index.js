@@ -64,12 +64,12 @@ export const PROJECTS = [
     technologies: ["HTML", "CSS", "React", "Tailwind css"],
   },
   {
-    title: "Blogging Platform",
+    title: "Cleaning Service Website",
     image: project4,
     link : "https://github.com/jasvir-vis",
     description:
       "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+    technologies: ["HTML", "CSS", "Javascript", "Jquery","Bootstrap","PHP", "mySQL"],
   },
 ];
 
