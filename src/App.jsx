@@ -10,7 +10,7 @@ import { FaDownload } from 'react-icons/fa'
 
 
 
-const resumeUrl = "vishalll.pdf";
+const resumeUrl = "jasvirsinghbadhan.pdf";
 
 const App = () => {
 
