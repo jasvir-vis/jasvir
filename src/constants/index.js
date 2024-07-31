@@ -66,7 +66,7 @@ export const PROJECTS = [
   {
     title: "Cleaning Service Website",
     image: project4,
-    link : "https://github.com/jasvir-vis",
+    link : "https://westerncleaningltd.co.nz/",
     description:
       "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
     technologies: ["HTML", "CSS", "Javascript", "Jquery","Bootstrap","PHP", "mySQL"],
