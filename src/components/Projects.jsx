@@ -28,7 +28,7 @@ const Projects = () => {
              <h6 className="mb-2 font-semibold">{project.title}</h6>
              <p className="mb-4 text-neutral-700">
               {project.description} <br />
-              <a href={project.link} className="text-blue-600 underline my-4">Source code</a></p>
+              <a href={project.link} className="text-blue-600 underline my-4">Link</a></p>
               
               {project.technologies.map((tech,index) =>(
                 <span key={index} className='mr-2 rounded bg-neutral-200 px-2 py-1 text-sm font-medium text-black'>{tech}</span>
