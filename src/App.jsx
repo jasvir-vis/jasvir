@@ -42,9 +42,10 @@ const App = () => {
       <Projects/>
       <Contactus/>
 
-      <Footerr/>
+
       
       </div>  
+        <Footerr/>
     </div>
     
   )
