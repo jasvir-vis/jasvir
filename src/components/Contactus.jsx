@@ -11,32 +11,24 @@ const Contactus = () => {
          transition={{duration: 0.5}}
          className="my-20 text-center text-blue-900 text-4xl">CONTACTS</motion.h1>
 
-        <motion.form 
+        <motion.div
          whileInView={{opacity: 1, x: 0}}
          initial= {{opacity:0, x:100}}
          transition={{duration: 1}}
-          action="#" method="POST" className='px-0 lg:px-12'>
-            <div className="mb-4">
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
-                <input type="text" id="name" name="name" className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-blue-500 focus:ring-blue-500 sm:text-sm" required />
+         className='px-0 lg:px-12'>
+            <div className="mb-4 d-flex flex-column gap-3 justify-content-center align-item-center">
+                <h3 className="text-dark text-center my-2">Address :</h3>
+                <h4 className="text-center text-muted mb-2">Attalgarh, PO - Mukerian, Distt - Hoshiarpur</h4>
+                <h4 className="text-muted text-center">Punjab (144211)</h4>
+              <br/>
+              <br/>
+              <h3 className="text-center">Mobile:</h3>
+              <h4 className="text-muted text-center" >+91 83604-19086</h4>
+
+              <h3 className="text-center">Email:</h3>
+              <h4 className="text-muted text-center">jasvishal@gmail.com</h4>
             </div>
-            
-            <div className="mb-4">
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
-                <input type="email" id="email" name="email" className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-blue-500 focus:ring-blue-500 sm:text-sm" required />
-            </div>
-            
-            <div className="mb-6">
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700">Message</label>
-                <textarea id="message" name="message" rows="4" className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-blue-500 focus:ring-blue-500 sm:text-sm" required></textarea>
-            </div>
-            
-            <div className="flex justify-end">
-                <button type="submit" className="inline-flex items-center px-4 py-2 bg-blue-500 border border-transparent rounded-md font-semibold text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
-                    Send
-                </button>
-            </div>
-        </motion.form>
+        </motion.div>
     </div>
   )
 }
