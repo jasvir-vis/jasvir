@@ -1,4 +1,4 @@
-import React, {useCallback} from 'react'
+import React, { useCallback } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/Abouts'
@@ -7,10 +7,11 @@ import Projects from './components/Projects'
 import Contactus from './components/Contactus'
 import Footerr from './components/Footerr'
 import { FaDownload } from 'react-icons/fa'
+import Training from './components/Training'
 
 
 
-const resumeUrl = "http://localhost:5173/vishalll.pdf";
+const resumeUrl = "http://localhost:5173/Resume_Jasvir_Singh.pdf";
 
 const App = () => {
 
@@ -23,30 +24,35 @@ const App = () => {
     aTag.click();
     document.body.removeChild(aTag);
 
-    })
+  })
 
   return (
     <div className='overflow-x-hidden text-neutral-800 antialiased selection:bg-cyan-300 selection:text-cyan-800'>
       <div className="fixed top-0 -z-10 h-full w-full">
-      <div className="absolute top-0 z-[-2] h-screen w-screen bg-white bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
-      </div>
-      <div className="container mx-auto px-8">
-      <Navbar/>
-      <div className='flex justify-center mb-5 lg:justify-start lg:mb-0 '>
-      <button onClick={downloadFile} className='bg-gray-200 hover:bg-orange-900 text-black hover:text-white font-bold py-2 px-4 rounded inline-flex items-center'><FaDownload/> <b className='px-2'>Resume</b></button>
-      </div>
-      
-      <Hero/>
-      <About/>
-      <Tech/>
-      <Projects/>
-      <Contactus/>
+        {/* Solid white background */}
+        <div className="absolute top-0 z-[-2] h-screen w-screen bg-white"></div>
 
-      <Footerr/>
+        {/* Subtle blurred white circles (lighter spotlight effect) */}
+        <div className="absolute top-10 left-10 w-[40%] h-[40%] bg-white/60 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-10 w-[50%] h-[50%] bg-white/40 rounded-full blur-3xl"></div>
+      </div>
+
+
+      <Navbar />
+      <div className="container mx-auto px-8">
       
-      </div>  
+        <Hero cv={downloadFile}/>
+        <About />
+        <Training />
+        <Tech />
+        <Projects />
+        <Contactus />
+      </div>
+      <Footerr />
+
     </div>
-    
+
+
   )
 }
 

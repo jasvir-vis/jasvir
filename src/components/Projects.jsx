@@ -1,46 +1,63 @@
-import React from 'react'
-import {PROJECTS} from '../constants'
-import { motion } from 'framer-motion'
+import React from "react";
+import { PROJECTS } from "../constants";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
-    <div className='border-b border-neutral-800 pb-24'>
-        <motion.h1 
-        whileInView={{opacity: 1, y: 0}}
-        initial= {{opacity:0, y:-100}}
-        transition={{duration: 0.5}}
-        className="my-20 text-center text-blue-900 text-4xl">PROJECTS</motion.h1>
-        <div>
-          {PROJECTS.map((project, index) => (
-            <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
-             <motion.div 
-             whileInView={{opacity: 1, x: 0}}
-             initial= {{opacity:0, x:-100}}
-             transition={{duration: 1}}
-               className="w-full lg:w-1/4">
-              <img src={project.image} width={150} height={150} className='my-4 rounded shadow-md shadow-black' alt={project.title} />
-              </motion.div>
-             <motion.div  
-            whileInView={{opacity: 1, x: 0}}
-            initial= {{opacity:0, x:-100}}
-            transition={{duration: 0.5}}
-              className="w-full max-w-xl lg:w-3/4">
-             <h6 className="mb-2 font-semibold">{project.title}</h6>
-             <p className="mb-4 text-neutral-700">
-              {project.description} <br />
-              <a href={project.link} className="text-blue-600 underline my-4">Source code</a></p>
+    <div className="border-b border-neutral-800 pb-24">
+      {/* Section Title */}
+      <motion.h1
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: -100 }}
+        transition={{ duration: 0.5 }}
+        className="my-20 text-center text-blue-900 text-4xl font-bold"
+      >
+        PROJECTS
+      </motion.h1>
+
+      {/* Grid Layout */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-6">
+        {PROJECTS.map((project, index) => (
+          <motion.div
+            key={index}
+            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 50 }}
+            transition={{ duration: 0.6, delay: index * 0.2 }}
+            className="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition bg-white border border-gray-200"
+          >
+            {/* Image */}
+            <img
+              src={project.image}
+              alt={project.title}
+              className="h-48 w-full object-cover"
+            />
+
+            {/* Content */}
+            <div className="p-6">
+              <h2 className="text-xl font-semibold text-gray-800 mb-2">
+                {project.title}
+              </h2>
+              <p className="text-gray-600 mb-4">{project.description}</p>
+
+              {/* Technologies */}
+              <div className="flex flex-wrap gap-2 mb-4">
+                {project.technologies.map((tech, index) => (
+                  <span
+                    key={index}
+                    className="rounded bg-blue-100 text-blue-800 px-2 py-1 text-xs font-medium"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+
               
-              {project.technologies.map((tech,index) =>(
-                <span key={index} className='mr-2 rounded bg-neutral-200 px-2 py-1 text-sm font-medium text-black'>{tech}</span>
-              ))}
-              </motion.div>
-
             </div>
-          ))}
-        </div>
+          </motion.div>
+        ))}
+      </div>
     </div>
-    
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;
