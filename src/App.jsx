@@ -41,7 +41,7 @@ const App = () => {
       <Navbar />
       <div className="container mx-auto px-8">
       
-        <Hero cv={downloadFile}/>
+        <Hero cv={downloadFile} resumeUrl={resumeUrl}/>
         <About />
         <Training />
         <Tech />
