@@ -11,7 +11,7 @@ import Training from './components/Training'
 
 
 
-const resumeUrl = "http://localhost:5173/Jasvir_Singh_FullStack.pdf";
+const resumeUrl = "/Jasvir_Singh_FullStack.pdf";
 
 const App = () => {
 
