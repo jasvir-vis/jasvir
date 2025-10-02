@@ -59,7 +59,7 @@ const Hero = (props) => {
               className="mt-8 flex gap-4"
             >
               <a
-                href="/resume.pdf"
+                href={props.resumeUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={props.cv} className="px-6 py-3 rounded-lg bg-neutral-200 text-black font-semibold hover:bg-neutral-300 transition"
